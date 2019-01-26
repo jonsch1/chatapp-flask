@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block main %}
+<h2 id="chat_name">{{chat_name}}</h2>
+<div class="grid-container">
+
+    <div class="grid-item">
+
+
+        <div class="grid-item">
+
+                <textarea class="form-control" id="message" name="text" placeholder="Your message.."></textarea>
+                <br><br>
+                <input type="submit" class="btn-primary" id="submit_message">
+
+        </div>
+    </div>
+    <div class="grid-item">
+        <div id="chat" name="chat"></div>
+
+    </div>
+</div>
+
+{% endblock %}

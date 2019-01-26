@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<div id="user"></div>
+<div id="create_chat">
+<h2> Create a chatroom/Join an existing one!</h2>
+<form action="/create_new_chat" method="post">
+   <input autocomplete="off" autofocus class="form-control" name="chat_name" type="text"/>
+   <hr>
+   <button type="submit">Create/View</button>
+</form>
+</div>
+
+
+{% endblock %}

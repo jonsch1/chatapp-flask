@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block main %}
+    <h2> These are the chatrooms. Click to join one!</h2>
+    {% for chat_name in chat_data %}
+        <a href="/chat/{{chat_name}}"> {{chat_name}} </a>
+        <br>
+    {%endfor%}
+{% endblock %}
